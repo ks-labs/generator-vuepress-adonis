@@ -1,6 +1,6 @@
 {
   "name": "@ks-labs/generator-vuepress-adonis",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Gerador de Documentação em Projetos AdonisJS4",
   "homepage": "http://www.ksgestao.com.br",
   "author": {
