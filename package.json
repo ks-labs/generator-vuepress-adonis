@@ -83,7 +83,7 @@
     "ci": "npm install"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/ks-labs"
+    "access": "public"
   },
   "repository": {
     "type": "git",
