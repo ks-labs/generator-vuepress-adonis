@@ -79,7 +79,8 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "ci": "npm install"
   },
   "repository": "@ks-labs/generator-vuepress-adonis-doc-generator",
   "license": "unlicense"
