@@ -1,0 +1,7 @@
+{
+  "name": "@ks-labs/generator-vuepress-adonis",
+  "scripts": {
+    "docs:dev": "cd ./docs && npm run dev && cd ../",
+    "docs:build": "cd ./docs && npm run build && cd ../"
+  }
+}

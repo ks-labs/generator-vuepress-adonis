@@ -1,0 +1,19 @@
+{
+  "name": "@ks-labs/<%= main_project_git_url %>-docs",
+  "version": "0.0.1",
+  "description": "Documentação técnica e não tecnica do <%= project_name %>",
+  "main": "index.js",
+  "authors": {
+    "name": "KSGestão",
+    "email": "desenvolvimento@ksgestao.com.br"
+  },
+  "repository": "ks-labs/<%= main_project_git_url %>",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
