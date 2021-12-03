@@ -34,6 +34,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@ks-labs'
       - run: echo "registry=https://npm.pkg.github.com/ks-labs" >> .npmrc
-      - run: npm install && npm publish $(ls *.tgz)
+      - run: npm publish $(ls *.tgz)
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}

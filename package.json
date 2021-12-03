@@ -89,5 +89,5 @@
     "type": "git",
     "url": "git+https://github.com/ks-labs/generator-vuepress-adonis-doc-generator.git"
   },
-  "license": "unlicense"
+  "license": "MIT"
 }
