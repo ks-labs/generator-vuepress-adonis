@@ -9,20 +9,7 @@ on:
       - main
 
 jobs:
-  test:
-    name: 'Install and test package'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 12.18.3
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.18.3
-      # move .npmrc to not cause  "Maximum call stack size exceeded" error when npm install executes
-      - run: npm ci
-
   deploy-package:
-    needs: [test]
     name: 'Deploy Package to Actions'
     runs-on: ubuntu-latest
     steps:
@@ -33,7 +20,6 @@ jobs:
           node-version: 12.18.3
           registry-url: https://npm.pkg.github.com/
           scope: '@ks-labs'
-      - run: echo "registry=https://npm.pkg.github.com/ks-labs" >> .npmrc
       - run: npm publish $(ls *.tgz)
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
